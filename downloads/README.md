@@ -1,0 +1,1 @@
+This file contains all the resources that get downloaded during development. For example, it may contain zipped fonts and images, Word documents with text for the site--just about anything that needs a landing place but doesn't fit in with the actual source files.
