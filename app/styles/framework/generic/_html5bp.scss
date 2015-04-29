@@ -65,17 +65,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+ * Box sizing.
+ * See https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
 
-body {
-  line-height: 1.0;
+html {
+  box-sizing: border-box;
 }
 
+*, *:after, *:before {
+  box-sizing: inherit;
+}
 
-
-
-
-
-
+img {
+  box-sizing: content-box;
+}
 
 
 
