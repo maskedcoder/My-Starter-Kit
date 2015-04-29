@@ -1,10 +1,16 @@
 /**
  * My Starter Kit
  */
-@import '_h5bp';
+
+
 
 /**
  * Framework styles
  * Remove if you prefer to use a CSS library, like Bootstrap
  */
 @import 'framework/contents';
+
+/**
+ * Internet Explorer styles
+ */
+@import '_ie';
