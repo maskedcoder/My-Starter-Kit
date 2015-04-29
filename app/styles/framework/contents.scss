@@ -1,8 +1,34 @@
 /**
  * Table of Contents
  *
- * This file will provide an outline of all the other files in the framework
+ * SETTINGS
+ * settings............................Global variables and config
+ *
+ * TOOLS
+ *
+ * GENERIC
+ * html5bp.............................HTML5 Boilerplate
+ * normalize...........................Normalize browser styles
+ *
+ * BASE
+ *
+ * OBJECTS
+ *
+ * COMPONENTS
+ *
+ * TRUMPS
  */
 
-@import '_normalize';
-@import '_global';
+
+/**
+ * Include settings file and the contents file for each directory.
+ * Each contents file is in charge of including the different
+ * files in that directory.
+ */
+@include '_settings';
+@include 'tools/_contents';
+@include 'generic/_contents';
+@include 'base/_contents';
+@include 'objects/_contents';
+@include 'components/_contents';
+@include 'trumps/_contents';
