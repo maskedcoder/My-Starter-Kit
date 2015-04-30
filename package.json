@@ -10,6 +10,8 @@
     "gulp-if": "^1.2.5",
     "gulp-ignore": "^1.2.1",
     "gulp-imagemin": "^2.2.1",
+    "gulp-jscs": "^1.6.0",
+    "gulp-jscs-stylish": "^1.1.0",
     "gulp-jshint": "^1.10.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-replace": "^0.5.3",

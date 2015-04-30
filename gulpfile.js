@@ -20,6 +20,8 @@ var AUTOPREFIXER_BROWSERS = [
     'bb >= 7'
 ];
 
+var noop = function () {};
+
 
 // Lint Javascript
 gulp.task('jshint', function () {
@@ -30,8 +32,11 @@ gulp.task('jshint', function () {
         }))
         .pipe($.ignore.exclude('*.min.js'))
         .pipe($.jshint())
+        .pipe($.jscs())
+        .on('error', noop) // Do not stop on error
+        .pipe($.jscsStylish.combineWithHintResults()) // Combine with JSHint
         .pipe($.jshint.reporter('jshint-stylish'))
-        .pipe($.if(!browserSync.active, $.jshint.reporter('fail')))
+        .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
 });
 
 // Compile stylesheets
