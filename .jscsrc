@@ -18,14 +18,14 @@
     "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
     "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
     "disallowSpacesInCallExpression": true,
-    "disallowSpacesInsideBrackets": "all",
+    "disallowSpacesInsideBrackets": true,
     "disallowTrailingComma": true,
     "disallowTrailingWhitespace": true,
     "disallowYodaConditions": true,
     "maximumLineLength": 100,
     "requireBlocksOnNewline": 1,
     "requireCamelCaseOrUpperCaseIdentifiers": true,
-    "requireCapitalizedComments": { allExcept: ["jshint"] },
+    "requireCapitalizedComments": { "allExcept": ["jshint"] },
     "requireCommaBeforeLineBreak": true,
     "requireCurlyBraces": true,
     "requireDollarBeforejQueryAssignment": "ignoreProperties",
@@ -77,6 +77,5 @@
     "requireSpacesInConditionalExpression": true,
     "requireSpacesInForStatement": true,
     "validateIndentation": 2,
-    "validateNewlineAfterArrayElements": 3,
-
+    "validateNewlineAfterArrayElements": 3
 }
