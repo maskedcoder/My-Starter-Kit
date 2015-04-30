@@ -41,15 +41,15 @@ gulp.task('styles', function () {
             'app/styles/**/*.css',
             'app/styles/framework/contents.scss'
         ])
-        .pipe($.changed('styles', {extension: '.scss'}))
+        .pipe($.changed('.tmp/styles', {extension: '.scss'}))
         .pipe($.sourcemaps.init())
         .pipe($.sass({
             style: 'expanded',
-            precision: 10
+            precision: 10,
+            onError: console.error.bind(console, 'Sass error:')
         }))
-        .pipe($.sourcemaps.write())
-        .on('error', console.error.bind(console))
         .pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
+        .pipe($.sourcemaps.write())
         .pipe(gulp.dest('.tmp/styles'))
         .pipe($.if('*.css', $.csso()))
         .pipe(gulp.dest('dist/styles'))
