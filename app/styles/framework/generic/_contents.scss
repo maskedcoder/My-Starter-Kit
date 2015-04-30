@@ -6,5 +6,5 @@
  * Generic styles are for resets, etc. Low specificity.
  */
 
-@include '_html5bp';
-@include '_normalize';
+@import '_html5bp';
+@import '_normalize';

@@ -25,10 +25,10 @@
  * Each contents file is in charge of including the different
  * files in that directory.
  */
-@include '_settings';
-@include 'tools/_contents';
-@include 'generic/_contents';
-@include 'base/_contents';
-@include 'objects/_contents';
-@include 'components/_contents';
-@include 'trumps/_contents';
+@import '_settings';
+@import 'tools/_contents';
+@import 'generic/_contents';
+@import 'base/_contents';
+@import 'objects/_contents';
+@import 'components/_contents';
+@import 'trumps/_contents';
