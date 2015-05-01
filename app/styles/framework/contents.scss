@@ -1,4 +1,15 @@
 /**
+ * Contents
+ *
+ * This is the base file of the framework. All framework stylesheets
+ * are imported here. If you add a file to the framework, be sure
+ * to add it here.
+ *
+ * See the accompanying readme.md for an explanation of how the
+ * framework is built and where files should be placed.
+ */
+
+/**
  * Table of Contents
  *
  * SETTINGS
@@ -21,14 +32,71 @@
 
 
 /**
- * Include settings file and the contents file for each directory.
- * Each contents file is in charge of including the different
- * files in that directory.
+ * Begin including files
  */
+
+/*----------------------------------------------------------------*\
+   #SETTINGS
+\*----------------------------------------------------------------*/
+
 @import '_settings';
-@import 'tools/_contents';
-@import 'generic/_contents';
-@import 'base/_contents';
-@import 'objects/_contents';
-@import 'components/_contents';
-@import 'trumps/_contents';
+
+
+
+
+
+/*----------------------------------------------------------------*\
+   #TOOLS
+\*----------------------------------------------------------------*/
+
+//@import 'tools/mixins';
+
+
+
+
+
+/*----------------------------------------------------------------*\
+   #GENERIC
+\*----------------------------------------------------------------*/
+@import 'generic/_html5bp';
+@import 'generic/_normalize';
+
+
+
+
+
+/*----------------------------------------------------------------*\
+   #BASE
+\*----------------------------------------------------------------*/
+
+//@import 'base/_contents';
+
+
+
+
+
+/*----------------------------------------------------------------*\
+   #OBJECTS
+\*----------------------------------------------------------------*/
+
+//@import 'objects/_contents';
+
+
+
+
+
+/*----------------------------------------------------------------*\
+   #COMPONENTS
+\*----------------------------------------------------------------*/
+
+//@import 'components/_contents';
+
+
+
+
+
+/*----------------------------------------------------------------*\
+   #TRUMPS
+\*----------------------------------------------------------------*/
+
+//@import 'trumps/_contents';
